@@ -118,18 +118,18 @@ var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
 if(twelveHour(today.getHours()) >12){
-    seconds+=" pm"
+    seconds+=" AM"
 }
 else{
-    seconds+=" am"
+    seconds+=" PM"
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning, AJ';
+        greet = 'Buenos Días, AJ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon, AJ';
+        greet = 'Buenas Tardes, AJ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening, AJ';
+        greet = 'Buenas Noches, AJ';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
